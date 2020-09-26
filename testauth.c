@@ -15,6 +15,7 @@
 // You should have received a copy of the GNU General Public License
 // along with this program. If not, see <http://www.gnu.org/licenses/>.
 //
+//mantap
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -22,7 +23,7 @@
 
 #include "termux-auth.h"
 
-// PoC of 'password login'
+// PoC of 'password login '
 
 int main(void) {
     char *password;
