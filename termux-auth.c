@@ -11,7 +11,7 @@
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 // GNU General Public License for more details.
-//
+// 
 // You should have received a copy of the GNU General Public License
 // along with this program. If not, see <http://www.gnu.org/licenses/>.
 //
@@ -40,8 +40,8 @@ static void erase_ptr(void *ptr, unsigned int len) {
     }
 }
 
-// Hash password using PBKDF function.
-// Returns digest (in binary form) or NULL if failed.
+// Hash password using PBKDF function. 
+// Returns digest (in binary form) or  NULL if failed.
 unsigned char *termux_passwd_hash(const char *password) {
     const unsigned char *salt = (const unsigned char *) "Termux!";
     unsigned char *pbkdf_digest;
@@ -59,8 +59,8 @@ unsigned char *termux_passwd_hash(const char *password) {
     return pbkdf_digest;
 }
 
-// Update file that stores password hash
-// Return true on success, false otherwise.
+// Update file that stores password  hash
+// Return true on success, false  otherwise.
 bool termux_change_passwd(const char *new_password) {
     FILE *termux_auth_file;
     bool is_password_changed = false;
